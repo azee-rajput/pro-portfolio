@@ -14,7 +14,6 @@ const Experience: React.FC<object>=()=>{
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <div><StyleButton label="view all work" type="anchor" to="#"/></div>
                 </Col>
                 <Col md={{span:5, offset:1}} className="exp">
                     <div className="shadowDiv">

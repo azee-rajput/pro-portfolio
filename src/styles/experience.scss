@@ -13,11 +13,6 @@
                 font-weight: bold;
             }
 
-            span{
-                margin-top: 10px;
-                display: inline-block;
-                vertical-align: middle;
-            }
         }
     
         .exp{
@@ -48,11 +43,11 @@
 
 }
 
-@media screen and (max-width: 767px){
-    .whyMe{
-        div{
-            width: 100%;
-            @include flexCenter();
-        }
-    }
-}
+// @media screen and (max-width: 767px){
+//     .whyMe{
+//         div{
+//             width: 100%;
+//             @include flexCenter();
+//         }
+//     }
+// }

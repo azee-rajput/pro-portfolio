@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import '../../styles/stylebutton.scss';
 
 interface IPROPS{
@@ -12,10 +11,9 @@ interface IPROPS{
 const StyleButton: React.FC<IPROPS>=(props)=>{
     return(
         <div>
-            <button className="styleButton">
-                {(props.type==="anchor" ? 
-                <a href={props.to} className="butn" target={props.tgt?"_blank":"_self"}>{props.label}</a> : <Link className="butn" to={props.to}>{props.label}</Link>)}
-            </button>
+            <a href={props.to} className="butn" target={props.tgt?"_blank":"_self"}>
+                <button className="styleButton">{props.label}</button>
+            </a>
         </div>
     )
 }

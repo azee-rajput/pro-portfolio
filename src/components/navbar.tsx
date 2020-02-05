@@ -9,11 +9,11 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 const Navbar: React.FC<object>=()=>{
     return(
-        <Container fluid className="topbar">
+        <Container fluid id="topbar">
             <Row>
-                <Col md={{span:2, offset:0}} className="title"><h1><a href="#">Title</a></h1></Col>
+                <Col md={{span:3, offset:0}} className="title"><h1><a href="#topbar">Abdul Zahir</a></h1></Col>
 
-                <Col md={{span:5, offset:5}} className="navlinks">
+                <Col md={{span:5, offset:4}} className="navlinks">
                     <ul>
                         <NavLink link="#about" name="About"/>
                         <NavLink link="#skill" name="Skills"/>

@@ -9,11 +9,11 @@ const BottomLinks: React.FC<object>=()=>{
         <Container fluid className="bottomLinks">
             <Row className="rowBottom">
                 <Col sm={6} className="colBottom">
-                    <h1>Title</h1>
+                    <h1><a href="#topbar">Abdul Zahir</a></h1>
                     <ul>
                         <NavLink link="#about" name="About"/>
-                        <NavLink link="#services" name="Services"/>
-                        <NavLink link="#portfolio" name="Portfolio"/>
+                        <NavLink link="#skill" name="Skills"/>
+                        <NavLink link="#work" name="Portfolio"/>
                         <NavLink link="#contact" name="Contact"/>
                     </ul>
                     <IconLinks/>

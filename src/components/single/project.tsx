@@ -18,12 +18,12 @@ const Project: React.FC<IPROPS>=(props)=>{
             <img src={props.srcImg} alt={props.name}/>
             <div className="overlay">
                 <div className="nameInfo">
-                    <h4>Title: {props.name}</h4>
-                    <h5>info: {props.info}</h5>
+                    <h4>{props.name}</h4>
+                    <h6>{props.info}</h6>
                 </div>
                 <div className="demoCode">
-                    <StyleButton label="Demo" type="anchor" to="#" />
-                    <StyleButton label="Code" type="anchor" to="#" />
+                    <StyleButton label="Demo" type="anchor" to={props.demo} tgt={true}/>
+                    <StyleButton label="Code" type="anchor" to={props.github} tgt={true}/>
                 </div>
             </div>
         </div>

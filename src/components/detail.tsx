@@ -20,7 +20,7 @@ const Detail: React.FC<object>=()=>{
                     <p>
                     I'm a developer from Pakistan, currently focusing on front-end, 
                     with a goal to become full-stack developer. 
-                    Check out some of my <a href="#">projects</a> down below.
+                    Check out some of my <a href="#work">projects</a> down below.
                     </p>
                     <Row className="btnLinks">
                         <Col md={6} className="colBtnLinks">
