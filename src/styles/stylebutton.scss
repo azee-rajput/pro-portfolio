@@ -1,0 +1,29 @@
+@import './functions';
+
+.styleButton{
+    @include flexCenter();
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    width:150px;
+    height: auto;
+    background: rgb(230, 17, 88);
+    text-align: center;
+    text-decoration: none;
+    box-shadow: none;
+    border:none;
+    transition: 0.5s;
+
+        &:hover{
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+
+    .butn{
+        font-size: 12px;
+        color:white;
+        text-decoration: none;
+    }
+}

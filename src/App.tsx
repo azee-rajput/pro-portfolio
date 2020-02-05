@@ -1,25 +1,55 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
+import Navbar from './components/navbar';
+import Intro from './components/intro';
+import {Container, Row } from 'react-bootstrap';
+import Breaker from './components/breaker';
+import Skills from './components/skills';
+import Detail from './components/detail';
+import Work from './components/work';
+import Experience from './components/experience';
+import Contact from './components/contact';
+import BottomLinks from './components/bottomLinks';
+import Footer from './components/footer';
+
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid className="App">
+      <Row><Navbar/></Row>
+      <Row id="intro"><Intro/></Row>
+      <Row>
+        <Breaker/>
+      </Row>
+      <Row id="skill">
+        <Skills/>
+      </Row>
+
+      <Row id="about">
+        <Detail/>
+      </Row>
+
+      <Row id="work">
+        <Work/>
+      </Row>
+
+      <Row>
+        <Experience/>
+      </Row>
+
+      <Row id="contact">
+        <Contact/>
+      </Row>
+
+      <Row>
+        <BottomLinks/>
+      </Row>
+
+      <Row>
+        <Footer/>
+      </Row>
+    </Container>
   );
 }
 

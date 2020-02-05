@@ -1,0 +1,36 @@
+@import './functions';
+
+.contact{
+    margin-top: 100px;
+
+    .rowContact{
+        // background: lightsteelblue;
+        height:100%;
+        @include flexCenter();
+
+        .colContact{
+            padding-top:50px;
+    padding-bottom: 50px;
+            @include shadowBox();
+            // @include flexCenter();
+            display: inline-flex;
+            /* align-items items in column */
+            flex-direction: column;
+            /* center items horizontally */
+            align-items: center;
+            /* center items vertically */
+            justify-content: center;
+            height: 100%;
+            
+            h1{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 22px;
+    }
+}

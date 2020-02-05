@@ -1,0 +1,16 @@
+$shadow: #efefef;
+
+
+@mixin shadowBox {
+    box-shadow: 20px 20px 30px $shadow,
+                        -20px -20px 30px $shadow,
+                        -20px 20px 30px $shadow,
+                        20px -20px 30px $shadow;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+}

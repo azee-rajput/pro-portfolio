@@ -1,0 +1,58 @@
+@import './functions';
+.experience{
+    color: black;
+    margin-top: 50px;
+
+    .expRow{
+        @include flexCenter();
+        // height: 50vh;
+
+        .whyMe{
+            margin-bottom: 50px;
+            h3{
+                font-weight: bold;
+            }
+
+            span{
+                margin-top: 10px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    
+        .exp{
+            text-align: center;
+            height:100%;
+            
+            .shadowDiv{
+                padding-top:50px;
+                padding-bottom: 50px;
+                @include shadowBox();
+                // @include flexCenter();
+                display: inline-flex;
+                /* align-items items in column */
+                flex-direction: column;
+                /* center items horizontally */
+                align-items: center;
+                /* center items vertically */
+                justify-content: center;
+                height: 100%;
+                Width:100%;
+                .company{
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .whyMe{
+        div{
+            width: 100%;
+            @include flexCenter();
+        }
+    }
+}

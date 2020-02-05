@@ -1,0 +1,42 @@
+@import './functions';
+
+.rowIntro{
+    @include flexCenter();
+    margin-top: 100px;
+}
+
+.intro{
+    text-align: center;
+    div{
+        text-align: left;
+        display: inline-block;
+    }
+    h1{
+        font-weight: bold;
+    }
+    p{
+        color: gray;
+    }
+}
+
+.myImage{
+    img{
+        width: auto;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .rowIntro, .intro, .intro div{
+        display: block;
+        text-align: center;
+    }
+
+    .myImage img{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,16 @@
+@import './functions';
+
+.bottomLinks{
+    margin-top: 100px;
+    text-align: center;
+
+    .rowBottom{
+        @include flexCenter();
+        .colBottom{
+            ul{
+                margin-top:50px;
+                margin-bottom:50px;
+            }
+        }
+    }
+}

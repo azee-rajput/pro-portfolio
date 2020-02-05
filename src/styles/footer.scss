@@ -1,0 +1,8 @@
+@import './functions';
+
+.footer{
+    margin-top: 100px;
+    min-height: 20vh;
+    @include flexCenter();
+    background-color: lightgray;
+}
