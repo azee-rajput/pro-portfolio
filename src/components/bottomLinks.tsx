@@ -8,8 +8,8 @@ const BottomLinks: React.FC<object>=()=>{
     return(
         <Container fluid className="bottomLinks">
             <Row className="rowBottom">
-                <Col sm={6} className="colBottom">
-                    <h1><a href="#topbar">Abdul Zahir</a></h1>
+                <Col sm={{span:6}} className="colBottom">
+                    <a href="#topbar"><img src={require("../img/logo.png")} alt="logo"/></a>
                     <ul>
                         <NavLink link="#about" name="About"/>
                         <NavLink link="#skill" name="Skills"/>

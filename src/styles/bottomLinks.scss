@@ -7,6 +7,10 @@
     .rowBottom{
         @include flexCenter();
         .colBottom{
+            img{
+                height:67px;
+                width:240px;
+            }
             ul{
                 margin-top:50px;
                 margin-bottom:50px;

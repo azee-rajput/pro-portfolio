@@ -11,7 +11,9 @@ const Navbar: React.FC<object>=()=>{
     return(
         <Container fluid id="topbar">
             <Row>
-                <Col md={{span:3, offset:0}} className="title"><h1><a href="#topbar">Abdul Zahir</a></h1></Col>
+                <Col md={{span:3, offset:0}} className="title">
+                    <a href="/"><img src={require("../img/logo.png")} alt="logo"/></a>
+                </Col>
 
                 <Col md={{span:5, offset:4}} className="navlinks">
                     <ul>

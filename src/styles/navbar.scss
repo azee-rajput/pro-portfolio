@@ -5,15 +5,19 @@
 //  position: fixed;
  z-index: 1;
  width: 100%;
- background-color: white;
 }
 
 .title{
-
+    padding: 10px;
     text-align: center;
+    img{
+        height:67px;
+        width:240px;
+    }
 }
 
 .navlinks{
+    padding: 10px;
     @include flexCenter();
 }
 

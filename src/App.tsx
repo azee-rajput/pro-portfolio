@@ -8,10 +8,11 @@ import Breaker from './components/breaker';
 import Skills from './components/skills';
 import Detail from './components/detail';
 import Work from './components/work';
-import Experience from './components/experience';
 import Contact from './components/contact';
 import BottomLinks from './components/bottomLinks';
 import Footer from './components/footer';
+import ApiLinks from './components/single/apiLinks';
+require('typeface-m-plus-rounded-1c');
 
 
 const App: React.FC = () => {
@@ -35,7 +36,7 @@ const App: React.FC = () => {
       </Row>
 
       <Row>
-        <Experience/>
+        <ApiLinks/>
       </Row>
 
       <Row id="contact">

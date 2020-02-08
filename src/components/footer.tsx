@@ -8,7 +8,7 @@ const Footer: React.FC<object>=()=>{
         <Container fluid className="footer">
             <Row className="rowFooter">
                 <Col md={12}>
-                    <h6>A.bdul Zahir. All rights reserved.</h6>
+                    <h6>Abdul Zahir. All rights reserved.</h6>
                 </Col>
             </Row>
         </Container>

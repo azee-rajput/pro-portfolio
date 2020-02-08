@@ -2,7 +2,28 @@
 
 .rowIntro{
     @include flexCenter();
-    margin-top: 100px;
+    margin-top: 0px;
+    position: relative;
+
+    img{
+        height: 206px;
+        width: 75px;
+        
+    }
+    .dots1{
+        position: absolute;
+        bottom:0;
+        left:0;
+        z-index: -1;
+        // margin-bottom: -100px;
+    }
+
+    .dots2{
+        position: absolute;
+        right:0;
+        top:0;
+        z-index: -1;
+    }
 }
 
 .intro{
@@ -20,11 +41,65 @@
 }
 
 .myImage{
-    img{
-        width: auto;
-        height: 500px;
+    // background: lightslategray;
+    @include flexCenter();
+    height:500px;
+    .contain{
+        display:inline-block;
+        position: relative;
+        .square{
+            z-index:-1;
+            height:50px;
+            width:50px;
+            background: #1d518a;
+            position: absolute;
+            left:0;
+            bottom:0;
+            transform: rotate(50deg);
+            @include flexCenter();
+            margin-left:-15px;
+            margin-bottom: -15px;
+    
+            .smallCircle{
+                height:35px;
+                width:35px;
+                background:#98dede;
+                border-radius: 50%;
+            }
+        }
+    
+        .circle{
+            height:60px;
+            width:60px;
+            background: #fbce69;
+            position: absolute;
+            border-radius: 50%;
+            top:0;
+            right:0;
+            transform: rotate(45deg);
+            z-index:-1;
+            @include flexCenter();
+            margin-top:-25px;
+            margin-right: -25px;
+    
+            .triangle{
+                width: 0;
+                height: 0;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-bottom: 50px solid #e55765;
+            }
+        }
+
+        img{
+            // position: relative;
+            width: auto;
+            height: 450px;
+        }
     }
-}
+
+    }
+    
 
 @media screen and (max-width: 767px){
     .rowIntro, .intro, .intro div{
@@ -33,10 +108,11 @@
     }
 
     .myImage img{
-        width: 100%;
+        width: 80%;
         height: auto;
         text-align: center;
         justify-content: center;
+        padding:2px;
     }
 
 }
