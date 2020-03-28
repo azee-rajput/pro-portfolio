@@ -25,14 +25,14 @@ const Work: React.FC<object>=()=>{
                              github="https://github.com/azee-rajput/30s-songs" 
                              srcImg={song}/>
 
-                    <Project name="Weather" 
-                             info="Weather app forecast the current weather and five day forecast for current location
+                    <Project name="Weather4cast" 
+                             info="Weather4forecast app forecast the current weather and five day forecast for current location
                              using geolocation. You can also search other cities to see their weather. 
                              APIs are consumed from openweathermap.
-                             Technologies used for creating this app are React.js, Bootstrap, JavaScript,
-                             HTML and CSS." 
-                             github="https://github.com/azee-rajput/react-weather" 
-                             demo="https://azee-rajput.github.io/react-weather/#/"
+                             Technologies used for creating this app are React.js, Bootstrap, TypeScript,
+                             Sass, HTML and CSS." 
+                             github="https://github.com/azee-rajput/weather-ts/tree/master" 
+                             demo="https://azee-rajput.github.io/weather-ts/"
                              srcImg={weather}/>
                 </Col>
 
